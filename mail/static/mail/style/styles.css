@@ -1,0 +1,141 @@
+/* =========================== */
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background   : #888;
+    /* background   : goldenrod; */
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ==================================== */
+
+textarea {
+    min-height: 400px;
+}
+
+/* bs overrwite */
+
+.badge{
+    vertical-align: text-bottom;
+}
+
+.tab-content {
+    min-height: 100%;
+    /* max-height: 100vh; */
+    overflow-y: auto;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--bs-dark);
+}
+
+.nav-pills .nav-link:not(.active) {
+    color: var(--bs-danger);
+}
+
+.nav-pills .nav-link:not(.active) i {
+    color: var(--bs-dark);
+}
+
+.nav-pills .nav-link#v-pills-compose-tab.active {
+    background-color: var(--bs-primary);
+}
+
+
+.nav-pills .nav-link#v-pills-compose-tab:not(.active) {
+    background-color: transparent;
+    color           : var(--bs-gray);
+    border          : 3px solid cornflowerblue;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    background-color: var(--bs-gray-200);
+}
+
+.toast,
+.toast-container {
+    z-index: 99991;
+}
+
+/* ================================ */
+/* email items */
+
+/* dropdown triangle */
+.email-item .dropdown-toggle::after {
+    display: none;
+}
+
+.email-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .15) !important;
+    border-left  : 3px solid var(--bs-light);
+    transition   : box-shadow 0.2s ease;
+}
+
+.list-group .email-item.unread {
+    background-color: var(--bs-white);
+}
+
+.list-group .email-item:hover {
+    background-color: var(--bs-gray-100);
+    box-shadow      : 0rem .1rem 0.2rem 0.1rem rgba(0, 0, 0, .15) !important;
+    border-left     : 3px solid var(--bs-danger);
+}
+
+.list-group .email-item.read {
+    background-color: var(--bs-gray-200);
+}
+
+.list-group .email-item:last-child {
+    border-bottom: 0 !important;
+}
+
+/* simple animation */
+
+.slide-out {
+    animation: slideout 0.3s ease 0s forwards;
+}
+
+@keyframes slideout {
+    from {
+        opacity  : 1;
+        transform: translate(0);
+    }
+
+    to {
+        opacity  : 0;
+        transform: translate(100%);
+    }
+}
+
+.slide-in {
+    animation: slidein 0.3s ease 0s forwards;
+}
+
+@keyframes slidein {
+    from {
+        opacity  : 0;
+        transform: translate(100%);
+    }
+
+    to {
+        opacity  : 1;
+        transform: translate(0);
+    }
+}
