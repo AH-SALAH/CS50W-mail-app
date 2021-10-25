@@ -62,7 +62,7 @@ CS50W Mail App project
 The following tools were used in this project:
 
 - [Django](https://docs.djangoproject.com/)
-- [Bootstrap](https://bootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## :white_check_mark: Requirements ##
 
