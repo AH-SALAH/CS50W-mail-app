@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-CS50W Mail App project
+CS50W Mail App project - [YT video](https://youtu.be/w8nBAGzynNc)
 
 ## :sparkles: Features ##
 
